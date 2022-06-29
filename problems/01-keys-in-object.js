@@ -13,7 +13,7 @@ keysInObject(foods); // => ["apple", "lemon", "mango"]
 ***********************************************************************/
 
 function keysInObject(obj) {
-  // your code here
+  console.log("Hello")
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
