@@ -1,6 +1,6 @@
 /***********************************************************************
-Write a function `setKeyInObject(obj, string, value)` that takes in three 
-parameters. The first parameter is an object, the second parameter will be a 
+Write a function `setKeyInObject(obj, string, value)` that takes in three
+parameters. The first parameter is an object, the second parameter will be a
 string and the third parameter will be a value. Your job is to return the object
 adding the second parameter as a key using the third parameter as its value.
 
@@ -13,8 +13,13 @@ let obj1 = {str: "hello"}
 setKeyInObject(obj1, "num", 3); // => {str: "hello", num: 3}
 ***********************************************************************/
 function setKeyInObject(obj, string, value) {
+<<<<<<< HEAD
   obj[string] = value;
   return obj
+=======
+ obj[string] = value;
+ return obj;
+>>>>>>> 9cbcae9bae88dbf025a284129b44df70b2adc1e3
 }
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 module.exports = setKeyInObject;
