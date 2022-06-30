@@ -11,7 +11,11 @@ doesKeyExist(obj1, 'name'); // => false
 ***********************************************************************/
 
 function doesKeyExist(obj, key) {
-  // your code here
+  for (let current in obj){
+if(current === key)
+return true
+  }return false;
+
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
