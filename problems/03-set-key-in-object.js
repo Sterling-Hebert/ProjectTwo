@@ -12,10 +12,9 @@ setKeyInObject(obj, "apple", "yum"); // => {apple: "yum"}
 let obj1 = {str: "hello"}
 setKeyInObject(obj1, "num", 3); // => {str: "hello", num: 3}
 ***********************************************************************/
-
 function setKeyInObject(obj, string, value) {
-  // your code here
+  obj[string] = value;
+  return obj
 }
-
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 module.exports = setKeyInObject;
