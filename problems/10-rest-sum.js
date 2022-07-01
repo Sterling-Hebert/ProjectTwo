@@ -10,8 +10,12 @@ restSum(0); // => 0
 ***********************************************************************/
 
 // you'll need to change the parameters!
-function restSum() {
-  // your code here
+function restSum(...number) {
+  let total = 0
+  for (let num of number) {
+    total += num;
+  }
+  return total
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/

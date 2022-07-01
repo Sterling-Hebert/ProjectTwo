@@ -17,9 +17,9 @@ breakDownObj(object2); // => [ 'location', 'borough', 'NY', 'Brooklyn' ]
 function breakDownObj(obj) {
   let arr1 = Object.keys(obj);
   let arr2 = Object.values(obj);
+  let arr3 = [...arr1, ...arr2]
 
-
-  return arr1.concat(arr2);
+  return arr3;
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
