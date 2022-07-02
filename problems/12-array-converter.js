@@ -11,9 +11,23 @@ console.log(arrayConverter(["mango", "pineapple"])); // => {mango: 1, pineapple:
 console.log(arrayConverter(["apple", "banana", "potato", "banana"])); // => {apple: 1, banana: 2, potato: 1}
 ***********************************************************************/
 
+console.log(arrayConverter(["apple", "apple"])); // => {apple: 2}
+
 function arrayConverter(array) {
-  // your code here
+  let obj = {}
+  for (let i = 0; i < array.length; i++) {
+    let keyes = array[i]
+    if (obj[keyes] === undefined) {
+      obj[keyes] = 1;
+    }
+    else {
+      obj[keyes]++
+    }
+  }
+  return obj
 }
+
+
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 module.exports = arrayConverter;
